@@ -1,0 +1,61 @@
+.programRadio {
+  cursor: pointer;
+  background-color: $light-gray;
+  border-radius: 10px;
+  border: 1px solid $medium-gray;
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  transition: $transition-duration;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  @include hoverStyles() {
+    border-color: $blue;
+    box-shadow: 2px 2px 5px 0px rgba(0, 34, 125, 0.5);
+
+    .icon {
+      color: $blue;
+    }
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:has(input:checked) {
+    border-color: $green;
+
+    .icon {
+      color: $green;
+    }
+
+    .info {
+      p, h5 {
+        color: $green;
+      }
+    }
+  }
+}
+
+.icon {
+  color: $medium-gray;
+  transition: $transition-duration;
+}
+
+.info {
+  p {
+    color: $blue;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: $dark-gray;
+  }
+}

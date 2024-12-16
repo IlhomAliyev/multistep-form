@@ -1,0 +1,45 @@
+.iconButton {
+  all: unset;
+  cursor: pointer;
+  height: 42px;
+  width: 42px;
+  transition: $transition-duration;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.outline {
+    border: 1px solid $dark-gray;
+  }
+
+  &.filled {
+    background-color: $blue;
+    border-color: transparent;
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.square {
+    border-radius: 12px;
+  }
+
+  &:disabled {
+    background-color: $gray;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+      border-color: $blue;
+      color: $blue;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}

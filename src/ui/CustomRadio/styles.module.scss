@@ -1,0 +1,40 @@
+.wrapper {
+  cursor: pointer;
+  color: $text;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .icon {
+    transition: $transition-duration;
+  }
+
+  &:has(input:checked) {
+    .icon {
+      color: $green;
+    }
+  }
+
+  &:has(input:not(:checked)) {
+    &:hover {
+      .icon {
+        color: $blue;
+      }
+    }
+
+    .icon {
+      color: $medium-gray;
+    }
+  }
+
+  &:has(input:focus-visible) {
+    .icon {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// Colors
+$bg-color: #eff2fb;
+$content-bg: #ffffff;
+$text: #000000;
+$white: #ffffff;
+$green: #02c463;
+$blue: #00237e;
+$gray: #eaeaef;
+$light-gray: #efeff4;
+$medium-gray: #ababb7;
+$dark-gray: #636368;
+$red: #ec1c25;
+
+// Breakpoints
+$laptop-large-breakpoint: 1440px;
+$laptop-breakpoint: 960px;
+$mobile-large-breakpoint: 600px;
+$mobile-breakpoint: 480px;
+
+$breakpoint: (
+  "xs": "320px",
+  "s": "700px",
+  "m": "1025px",
+  "l": "1280px",
+  "xl": "1540px",
+);
+
+// Container padding
+$container-padding-y: 30px;
+$container-padding-xs: 16px;
+$container-padding-sm: 48px;
+$container-padding-md: 56px;
+$container-padding-xl: 64px;
+
+// Container max width
+$container-max-width-md: 1312px + ($container-padding-md * 2);
+$container-max-width-xl: 1520px + ($container-padding-xl * 2);
+
+// Content
+$content-max-width: 600px;
+
+// Transitions
+$transition-duration: 200ms;

@@ -1,0 +1,54 @@
+.container {
+  padding: $container-padding-y $container-padding-xs;
+  max-width: $container-max-width-md;
+
+  @include breakpoint("s") {
+    padding-left: $container-padding-sm;
+    padding-right: $container-padding-sm;
+  }
+
+  @include breakpoint("m") {
+    padding-left: $container-padding-md;
+    padding-right: $container-padding-md;
+  }
+
+  @include breakpoint("xl") {
+    max-width: $container-max-width-xl;
+    padding-left: $container-padding-xl;
+    padding-right: $container-padding-xl;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.content {
+  max-width: $content-max-width;
+  background-color: $content-bg;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 34, 125, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  .indicator {
+    flex: 1 1 auto;
+  }
+
+  button {
+    flex: 0 1 auto;
+  }
+}
+
+.attention {
+  margin-top: 10px;
+  color: $dark-gray;
+}

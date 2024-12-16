@@ -1,0 +1,27 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 16px;
+  height: 42px;
+  background-color: $green;
+  color: $white;
+  border-radius: 12px;
+  text-align: center;
+  transition: $transition-duration;
+  font-weight: 500;
+
+  &:disabled {
+    background-color: $gray;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}

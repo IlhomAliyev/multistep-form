@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  :nth-child(1) {
+    flex: 1 1 40%;
+  }
+
+  :nth-child(2) {
+    flex: 1 1 60%;
+  }
+}
+
+.codeSelect {
+  select {
+    padding-left: 40px;
+  }
+}

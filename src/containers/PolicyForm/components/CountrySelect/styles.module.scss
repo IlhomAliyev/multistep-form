@@ -1,0 +1,16 @@
+.countrySelect {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  button {
+    flex: 0 0 42px;
+    height: 42px;
+    width: 42px;
+  }
+}
+
+.select {
+  flex: 1 1 auto;
+}
+

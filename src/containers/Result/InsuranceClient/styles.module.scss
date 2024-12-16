@@ -1,0 +1,24 @@
+.client {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1px solid $gray;
+  border-radius: 12px;
+  padding: 20px;
+  transition: $transition-duration;
+
+  @include hoverStyles() {
+    border-color: $blue;
+    box-shadow: 2px 2px 5px 0px rgba(0, 34, 125, 0.5);
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delete {
+  background-color: $red;
+}

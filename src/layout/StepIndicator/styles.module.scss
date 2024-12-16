@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  gap: 14px;
+}
+
+.step {
+  flex: 1 1 calc(100% / 2);
+  height: 10px;
+  border-radius: 5px;
+  background-color: $medium-gray;
+
+  &._active {
+    background-color: $green;
+  }
+}

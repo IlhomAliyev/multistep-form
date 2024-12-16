@@ -1,0 +1,32 @@
+.wrapper {
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid $medium-gray;
+  color: $medium-gray;
+  height: 42px;
+  width: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include hoverStyles() {
+    border-color: $blue;
+    color: $blue;
+  }
+
+  .icon {
+    transition: $transition-duration;
+  }
+
+  input {
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border: 1px solid red;
+    width: 42px;
+    height: 42px;
+  }
+}

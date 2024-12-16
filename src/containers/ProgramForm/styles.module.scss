@@ -1,0 +1,21 @@
+.programForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}

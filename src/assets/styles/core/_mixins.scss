@@ -1,0 +1,19 @@
+@use "sass:math";
+@use "variables" as *;
+@use "functions" as *;
+
+// Миксин для медиа-запросов
+@mixin breakpoint($name) {
+  @media (min-width: map-deep-get($breakpoint, $name)) {
+    @content;
+  }
+}
+
+// Миксин для hover стилей при наличии курсора
+@mixin hoverStyles() {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

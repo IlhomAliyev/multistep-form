@@ -1,0 +1,193 @@
+@use "mixins" as *;
+@use "variables" as *;
+// Headings
+
+.t-heading-1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  color: $blue;
+  font-weight: 700;
+
+  @include breakpoint("m") {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @include breakpoint("l") {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.t-heading-2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $blue;
+  font-weight: 600;
+
+  @include breakpoint("m") {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @include breakpoint("l") {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.t-heading-3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: $blue;
+
+  @include breakpoint("l") {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.t-heading-4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $blue;
+
+  @include breakpoint("l") {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.t-heading-5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $blue;
+
+  @include breakpoint("l") {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include breakpoint("xl") {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.t-heading-6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $blue;
+
+  @include breakpoint("xl") {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+// Base text
+
+.t-large-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @include breakpoint("xl") {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.t-main-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include breakpoint("xl") {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.t-small-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  @include breakpoint("xl") {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.t-supersmall {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @include breakpoint("xl") {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+// Links
+
+.t-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @include breakpoint("xl") {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.t-tiny-text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @include breakpoint("xl") {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.t-small-link-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @include breakpoint("xl") {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
