@@ -9,9 +9,10 @@ import { Fragment } from "react/jsx-runtime";
 import { ProgramRadio } from "./components/ProgramRadio";
 import { usePrograms } from "./hooks";
 import styles from "./styles.module.scss";
+import { ErrorText } from "@/ui/ErrorText";
 
 export const ProgramForm = () => {
-  const { watch } = useFormContext();
+  const { watch, formState } = useFormContext();
   const countryId = watch(FormFields.country);
   const programId = watch(FormFields.program);
 
@@ -38,13 +39,30 @@ export const ProgramForm = () => {
         </Fragment>
       </Display>
 
+      <Display
+        condition={Boolean(formState.errors[FormFields.program]?.message)}
+      >
+        <ErrorText
+          message={formState.errors[FormFields.program]?.message as string}
+        />
+      </Display>
+
       <h3 className={clsx(styles.subtitle, "t-heading-3")}>
         Сравнить программы
       </h3>
 
-      <CustomButton className={styles.button}>
+      <CustomButton
+        type="submit"
+        disabled={
+          formState.isSubmitting ||
+          Boolean(formState.errors[FormFields.program])
+        }
+        className={styles.button}
+      >
         <span>Выбрать {selectedProgram?.name}</span>
-        <span>{priceFormat(selectedProgram?.liability)} EUR</span>
+        {selectedProgram && (
+          <span>{priceFormat(selectedProgram?.liability)} EUR</span>
+        )}
       </CustomButton>
     </div>
   );

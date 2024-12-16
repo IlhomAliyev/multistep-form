@@ -23,28 +23,28 @@ export const InsuranceClient = ({
     <div className={styles.client}>
       <div className={styles.info}>
         <p>
-          <b>ID:</b> {id}
+          <b>ID клиента:</b> {id}
         </p>
         <p>
-          <b>Phone:</b> {phone}
+          <b>Телефон:</b> {phone}
         </p>
         <p>
-          <b>Country:</b> {country}
+          <b>ID страны:</b> {country}
         </p>
         <p>
-          <b>Coverage:</b> {coverage}
+          <b>Тип покрытия:</b> {coverage}
         </p>
         <p>
-          <b>Insurance Begin:</b> {insurance_begin}
+          <b>Начало страхования:</b> {insurance_begin}
         </p>
         <p>
-          <b>Insurance End:</b> {insurance_end}
+          <b>Конец страхования:</b> {insurance_end}
         </p>
         <p>
-          <b>Activity:</b> {activity}
+          <b>ID цели:</b> {activity}
         </p>
         <p>
-          <b>Program:</b> {program}
+          <b>ID программы:</b> {program}
         </p>
       </div>
       <CustomButton
